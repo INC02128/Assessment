@@ -24,6 +24,8 @@ import UIKit
         }
         func register(){
             tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
+            self.tableView.separatorColor = .blue
+            self.tableView.separatorStyle = .singleLine
         }
         
         func fetchData(){
@@ -69,9 +71,9 @@ import UIKit
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! TableViewCell
-            cell.id.text = "\(apiData[indexPath.row].id ?? 0)"
-            cell.title.text = apiData[indexPath.row].title ?? ""
-            cell.body.text = apiData[indexPath.row].body ?? ""
+            cell.postId.text = "\(apiData[indexPath.row].id ?? 0)"
+            cell.postTitle.text = apiData[indexPath.row].title ?? ""
+            cell.postText.text = apiData[indexPath.row].body ?? ""
             return cell
         }
         

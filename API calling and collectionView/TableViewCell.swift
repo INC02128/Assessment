@@ -12,15 +12,16 @@ class TableViewCell: UITableViewCell {
 
     static let reuseIdentifier = "TableViewCell"
     
-    @IBOutlet weak var uview: UIView!
-    @IBOutlet weak var title: UILabel!
-    @IBOutlet weak var body: UILabel!
-    @IBOutlet weak var id: UILabel!
+    @IBOutlet weak var outerView: UIView!
+    @IBOutlet weak var postTitle: UILabel!
+    @IBOutlet weak var postText: UILabel!
+    @IBOutlet weak var postId: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.uview.layer.cornerRadius = 15.0
-        self.uview.layer.shadowColor = UIColor.black.cgColor
-        self.uview.layer.shadowOpacity = 0.5
+        self.outerView.layer.cornerRadius = 15.0
+        self.outerView.layer.shadowColor = UIColor.black.cgColor
+        self.outerView.layer.shadowOpacity = 0.5
+        self.outerView.backgroundColor = .lightGray
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

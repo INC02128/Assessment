@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KyO-Pp-2eC">
-                        <rect key="frame" x="0.0" y="0.0" width="420" height="150"/>
+                        <rect key="frame" x="0.0" y="5" width="420" height="140"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uus-rZ-SlY">
                                 <rect key="frame" x="10" y="10" width="40" height="20"/>
@@ -36,7 +36,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpi-cP-0gB">
-                                <rect key="frame" x="55" y="58" width="360" height="87"/>
+                                <rect key="frame" x="20" y="58" width="395" height="77"/>
                                 <string key="text">et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -48,9 +48,9 @@
                             <constraint firstItem="9O0-Q9-uhw" firstAttribute="leading" secondItem="Uus-rZ-SlY" secondAttribute="trailing" constant="5" id="2Rm-s1-FG3"/>
                             <constraint firstAttribute="trailing" secondItem="xpi-cP-0gB" secondAttribute="trailing" constant="5" id="6Q0-cB-fdZ"/>
                             <constraint firstItem="Uus-rZ-SlY" firstAttribute="leading" secondItem="KyO-Pp-2eC" secondAttribute="leading" constant="10" id="8QF-Na-FCK"/>
+                            <constraint firstItem="xpi-cP-0gB" firstAttribute="leading" secondItem="KyO-Pp-2eC" secondAttribute="leading" constant="20" id="IB5-UG-rs5"/>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="138" id="TTc-c5-1r0"/>
                             <constraint firstAttribute="bottom" secondItem="xpi-cP-0gB" secondAttribute="bottom" constant="5" id="TXm-rV-nef"/>
-                            <constraint firstItem="xpi-cP-0gB" firstAttribute="leading" secondItem="KyO-Pp-2eC" secondAttribute="leading" constant="55" id="ZWL-yo-GBi"/>
                             <constraint firstAttribute="trailing" secondItem="9O0-Q9-uhw" secondAttribute="trailing" constant="5" id="hb9-Tx-zty"/>
                             <constraint firstItem="Uus-rZ-SlY" firstAttribute="top" secondItem="KyO-Pp-2eC" secondAttribute="top" constant="10" id="his-kb-JPZ"/>
                             <constraint firstItem="xpi-cP-0gB" firstAttribute="top" secondItem="9O0-Q9-uhw" secondAttribute="bottom" constant="5" id="isQ-KT-XpF"/>
@@ -60,17 +60,17 @@
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="KyO-Pp-2eC" secondAttribute="trailing" id="Q7b-An-Rci"/>
-                    <constraint firstItem="KyO-Pp-2eC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QM9-bK-bVP"/>
+                    <constraint firstItem="KyO-Pp-2eC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="QM9-bK-bVP"/>
                     <constraint firstItem="KyO-Pp-2eC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mNY-iD-VXM"/>
-                    <constraint firstAttribute="bottom" secondItem="KyO-Pp-2eC" secondAttribute="bottom" id="sZm-9c-Qki"/>
+                    <constraint firstAttribute="bottom" secondItem="KyO-Pp-2eC" secondAttribute="bottom" constant="5" id="sZm-9c-Qki"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="body" destination="xpi-cP-0gB" id="8Bs-6Z-lQR"/>
-                <outlet property="id" destination="Uus-rZ-SlY" id="Yxc-GO-Tsz"/>
-                <outlet property="title" destination="9O0-Q9-uhw" id="aY8-z4-pla"/>
-                <outlet property="uview" destination="KyO-Pp-2eC" id="bdX-PI-ogO"/>
+                <outlet property="outerView" destination="KyO-Pp-2eC" id="bdX-PI-ogO"/>
+                <outlet property="postId" destination="Uus-rZ-SlY" id="Yxc-GO-Tsz"/>
+                <outlet property="postText" destination="xpi-cP-0gB" id="8Bs-6Z-lQR"/>
+                <outlet property="postTitle" destination="9O0-Q9-uhw" id="aY8-z4-pla"/>
             </connections>
             <point key="canvasLocation" x="138.93129770992365" y="19.718309859154932"/>
         </tableViewCell>
