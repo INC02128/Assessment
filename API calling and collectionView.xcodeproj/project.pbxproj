@@ -13,6 +13,13 @@
 		4A91945429E40AA5002066DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A91945229E40AA5002066DC /* Main.storyboard */; };
 		4A91945629E40AA7002066DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A91945529E40AA7002066DC /* Assets.xcassets */; };
 		4A91945929E40AA7002066DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A91945729E40AA7002066DC /* LaunchScreen.storyboard */; };
+		4A91946129E40FBE002066DC /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A91946029E40FBE002066DC /* SecondViewController.swift */; };
+		4A91946329E40FCF002066DC /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A91946229E40FCF002066DC /* ThirdViewController.swift */; };
+		4A91946829E410AE002066DC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A91946629E410AE002066DC /* TableViewCell.swift */; };
+		4A91946929E410AE002066DC /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A91946729E410AE002066DC /* TableViewCell.xib */; };
+		4A91946B29E410E2002066DC /* ApiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A91946A29E410E2002066DC /* ApiModel.swift */; };
+		4A91947429E4160B002066DC /* FruitsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A91947229E4160B002066DC /* FruitsCollectionViewCell.swift */; };
+		4A91947529E4160B002066DC /* FruitsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A91947329E4160B002066DC /* FruitsCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		4A91945529E40AA7002066DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A91945829E40AA7002066DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A91945A29E40AA7002066DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A91946029E40FBE002066DC /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		4A91946229E40FCF002066DC /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		4A91946629E410AE002066DC /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		4A91946729E410AE002066DC /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		4A91946A29E410E2002066DC /* ApiModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiModel.swift; sourceTree = "<group>"; };
+		4A91947229E4160B002066DC /* FruitsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitsCollectionViewCell.swift; sourceTree = "<group>"; };
+		4A91947329E4160B002066DC /* FruitsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FruitsCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +77,13 @@
 				4A91945529E40AA7002066DC /* Assets.xcassets */,
 				4A91945729E40AA7002066DC /* LaunchScreen.storyboard */,
 				4A91945A29E40AA7002066DC /* Info.plist */,
+				4A91946029E40FBE002066DC /* SecondViewController.swift */,
+				4A91946229E40FCF002066DC /* ThirdViewController.swift */,
+				4A91946629E410AE002066DC /* TableViewCell.swift */,
+				4A91946729E410AE002066DC /* TableViewCell.xib */,
+				4A91946A29E410E2002066DC /* ApiModel.swift */,
+				4A91947229E4160B002066DC /* FruitsCollectionViewCell.swift */,
+				4A91947329E4160B002066DC /* FruitsCollectionViewCell.xib */,
 			);
 			path = "API calling and collectionView";
 			sourceTree = "<group>";
@@ -126,8 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A91945929E40AA7002066DC /* LaunchScreen.storyboard in Resources */,
+				4A91946929E410AE002066DC /* TableViewCell.xib in Resources */,
 				4A91945629E40AA7002066DC /* Assets.xcassets in Resources */,
 				4A91945429E40AA5002066DC /* Main.storyboard in Resources */,
+				4A91947529E4160B002066DC /* FruitsCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +161,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A91946129E40FBE002066DC /* SecondViewController.swift in Sources */,
+				4A91946B29E410E2002066DC /* ApiModel.swift in Sources */,
 				4A91945129E40AA5002066DC /* ViewController.swift in Sources */,
+				4A91946329E40FCF002066DC /* ThirdViewController.swift in Sources */,
+				4A91946829E410AE002066DC /* TableViewCell.swift in Sources */,
 				4A91944D29E40AA5002066DC /* AppDelegate.swift in Sources */,
+				4A91947429E4160B002066DC /* FruitsCollectionViewCell.swift in Sources */,
 				4A91944F29E40AA5002066DC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
